@@ -33,16 +33,16 @@ export default function App() {
 
       <div className="row">
         <div className="col-6 mb-2 col-sm-3">
-          <Box bg="bg-primary"/>
+          <Box colorr="box bg-primary"/>
         </div>
         <div className="col-6 mb-2 col-sm-3">
-          <Box bg="bg-success"/>
+          <Box colorr="box bg-success"/>
         </div>
         <div className="col-6 mb-2 col-sm-3">
-          <Box />
+          <Box colorr="box bg-info"/>
         </div>
         <div className="col-6 mb-2 col-sm-3">
-          <Box />
+          <Box colorr="box bg-warning"/>
         </div>
       </div>
     </div>
