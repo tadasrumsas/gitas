@@ -16,7 +16,7 @@ export default function ProductList() {
         <ul>
             {products.map((product) => (
                 <li key={product.id}>{product.name}
-                <Link to={`/products/${product.name}`}> View Details</Link>
+                <Link to={`/products/${product.id}`}> View Details</Link>
                 </li>
             ))}
 
