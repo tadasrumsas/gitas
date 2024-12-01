@@ -45,7 +45,7 @@ export default function Card() {
         height="140"
       ></img> */}
 
-      <h2 className="fw-normal">Name: {data.name}</h2>
+      <h2>Name: {data.name}</h2>
       <p>Username: {data.username}</p>
       <p>Email: {data.email}</p>
       <p>Phone: {data.phone} </p>
