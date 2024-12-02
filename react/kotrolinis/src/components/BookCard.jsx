@@ -12,7 +12,7 @@ export default function DonorCard() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:4000/books/${id}`
+          `http://localhost:4000/books/`
         );
         const data = await response.json();
 

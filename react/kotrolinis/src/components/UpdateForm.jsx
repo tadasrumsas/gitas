@@ -124,7 +124,9 @@ export default function UpdateForm() {
 
 
             <option value="">Choose category</option>
-            <option value="1"> 1</option>
+            <option value="Horror">Horror</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Science">Science</option>
           </select>
           {errors.category && (
             <p className="text-danger">Category is required</p>
@@ -140,10 +142,13 @@ export default function UpdateForm() {
             type="text"
             id="price"
             className="form-control"
-            {...register("price", {required: true})}
+            {...register("price", {required: true, pattern: /\b[1-9][0-9]*\b/})}
           />
           {errors.price?.type === "required" && (
             <p className="text-danger">Field cannot be empty</p>
+          )}
+           {errors.price?.type === "pattern" && (
+            <p className="text-danger">Must be above 0</p>
           )}
         </div>
 
@@ -155,10 +160,13 @@ export default function UpdateForm() {
             type="text"
             id="cover"
             className="form-control"
-            {...register("cover", {required: true})}
+            {...register("cover", {required: true, pattern: /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/})}
           />
           {errors.cover?.type === "required" && (
             <p className="text-danger">Field cannot be empty</p>
+          )}
+          {errors.cover?.type === "pattern" && (
+            <p className="text-danger">URL type is wrong</p>
           )}
 
         </div>

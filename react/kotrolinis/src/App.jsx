@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { NavLink, Routes, Route } from "react-router";
-import "./App.css";
+// import "./App.css";
 import Form from "./components/Form";
 import Home from "./components/Home";
 import Header from "./components/Header";
@@ -17,8 +17,9 @@ function App() {
 <Header/>
       <main>
 
-        
+
       <Routes>
+        
       <Route
         path="/"
         element={<Home/>}

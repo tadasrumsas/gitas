@@ -1,20 +1,12 @@
 {
   "books": [
     {
-      "title": "Lake",
-      "author": "Ben",
-      "category": "1",
-      "price": "20",
-      "cover": "https://www.wallpapergeeks.com/wp-content/uploads/2014/03/Nature_107.jpg",
-      "id": "2a9d"
-    },
-    {
-      "id": "8f89",
-      "title": "Stone",
-      "author": "Stones",
-      "category": "1",
+      "title": "Lala",
+      "author": "Gggg",
+      "category": "Science",
       "price": "150",
-      "cover": "https://th.bing.com/th/id/R.e8beec869c3154022bdbbf6b03407525?rik=i4PytWGtGqHvvQ&pid=ImgRaw&r=0"
+      "cover": "https://tinyjpg.com/images/social/website.jpg",
+      "id": "8183"
     }
   ]
 }
