@@ -15,7 +15,7 @@ export default function EditTask() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/tasks/${id}`);
+        const response = await fetch(`http://localhost:3001/books/${id}`);
         const data = await response.json();
 
         setData(data);
@@ -30,7 +30,7 @@ export default function EditTask() {
 
   const onSubmit = async (data) => {
     try {
-      const response = await fetch(`http://localhost:3000/tasks/${id}`, {
+      const response = await fetch(`http://localhost:3001/books/${id}`, {
         method: "PUT",
         body: JSON.stringify(data),
         headers: {
